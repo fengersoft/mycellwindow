@@ -28,9 +28,12 @@ private slots:
 
     void on_btnOpenFile_clicked();
 
+    void on_btnInsertDateTime_clicked();
+
 private:
     Ui::ControlWidget* ui;
     bool m_darkModel;
+    QString m_fileName;
 };
 
 #endif // CONTROLWIDGET_H

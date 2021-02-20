@@ -62,3 +62,9 @@ void ControlWidget::on_btnOpenFile_clicked()
     ui->edtInfo->setText(file.readAll());
     file.close();
 }
+
+void ControlWidget::on_btnInsertDateTime_clicked()
+{
+    ui->edtInfo->append(QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss") + "\n");
+    ui->edtInfo->setFocus();
+}
